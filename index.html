@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sio-chat example application</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://172.16.134.120:8082/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+    <link rel="stylesheet" href="css/chat.css" />
+  </head>
+  <body>
+  <div class="chat_wrap">
+    <div class="chat_head">
+    	<div class="head_left"></div>
+      <div class="head_middle">
+      	<div class="user"><input type="text" name="username" id="username" /><span class="submit_user">ok</span></div>
+        <div class="top_controllers"><div class="expander"></div></div>
+      </div>
+      <div class="head_right"></div>
+    </div>
+    <div class="chat_body">
+      <div id="lines"></div>
+      <input type="text" id="input" disabled="disabled"/>
+      <input type="button" value="send" id="send" />
+    </div>
+  </div>
+  </body>
+</html>
